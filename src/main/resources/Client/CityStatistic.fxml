@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="467.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.Statistic.CityStatisticController">
+    <children>
+        <PieChart fx:id="piechart" layoutY="47.0" prefHeight="421.0" prefWidth="427.0" style="-fx-background-color: grey;" />
+        <AnchorPane prefHeight="47.0" prefWidth="759.0" style="-fx-background-color: #2F3F73;">
+            <children>
+                <Label layoutX="132.0" layoutY="13.0" text="Соотношение городов по колличеству сотрудников" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label fx:id="city_1" layoutX="430.0" layoutY="73.0" prefHeight="16.0" prefWidth="318.0" text="город 1" />
+        <Label fx:id="city_2" layoutX="430.0" layoutY="97.0" prefHeight="16.0" prefWidth="318.0" text="город 2" />
+        <Label fx:id="city_3" layoutX="431.0" layoutY="121.0" prefHeight="16.0" prefWidth="318.0" text="город 3" />
+        <Label fx:id="city_4" layoutX="431.0" layoutY="145.0" prefHeight="16.0" prefWidth="318.0" text="город 3" />
+        <Label fx:id="city_5" layoutX="432.0" layoutY="168.0" prefHeight="16.0" prefWidth="318.0" text="город 5" />
+      <Label fx:id="city_6" layoutX="433.0" layoutY="190.0" prefHeight="16.0" prefWidth="318.0" text="город 6" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="460.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.Employee.EditEmployeeController">
+   <children>
+      <AnchorPane prefHeight="41.0" prefWidth="543.0" style="-fx-background-color: #2F3F73;">
+         <children>
+            <Label layoutX="150.0" layoutY="11.0" text="Редактирование сотрудника" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="employee_name" layoutX="186.0" layoutY="155.0" />
+      <Label layoutX="186.0" layoutY="139.0" text="Имя" />
+      <TextField fx:id="employee_surname" layoutX="186.0" layoutY="199.0" />
+      <Label layoutX="185.0" layoutY="181.0" text="Фамилия" />
+      <ComboBox fx:id="employee_location" layoutX="186.0" layoutY="244.0" prefHeight="24.0" prefWidth="171.0" promptText="Выберите город" />
+      <Label layoutX="186.0" layoutY="228.0" text="Локация" />
+      <ComboBox fx:id="employee_department" layoutX="186.0" layoutY="289.0" prefHeight="24.0" prefWidth="171.0" promptText="Выберите отдел" />
+      <Label layoutX="186.0" layoutY="273.0" text="Отдел" />
+      <TextField fx:id="employee_position" layoutX="188.0" layoutY="335.0" />
+      <Label layoutX="188.0" layoutY="319.0" text="Должность" />
+      <Spinner fx:id="employee_salary" layoutX="287.0" layoutY="373.0" prefHeight="24.0" prefWidth="70.0" />
+      <Label layoutX="190.0" layoutY="377.0" text="Зарплата" />
+      <TextField fx:id="employee_id" layoutX="187.0" layoutY="63.0" prefHeight="24.0" prefWidth="53.0" promptText="id" />
+      <Button fx:id="select_btn" layoutX="244.0" layoutY="63.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="112.0" text="выбрать" />
+      <Label fx:id="selected_employee_information" layoutX="13.0" layoutY="102.0" prefHeight="16.0" prefWidth="518.0" text="после выбора сотрудника здесь отобразится его текущие данные" textFill="#8c6123" />
+      <Button fx:id="edit_btn" layoutX="192.0" layoutY="414.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="171.0" style="-fx-background-color: blue;" text="Редактировать" textFill="WHITE" />
+   </children>
+</AnchorPane>
